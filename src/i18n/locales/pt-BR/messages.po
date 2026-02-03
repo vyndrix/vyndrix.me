@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-01-24 11:53-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: pt-BR\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/app/page.tsx:124
+msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences. Drawn to clean architecture, smooth interactions, and the small details that shape how things feel. Long-time comics collector, art enthusiast, and permanently supervised by two cats"
+msgstr "Desenvolvedor frontend e mobile com foco em evoluir como especialista em interfaces modernas e experiências guiadas por design. Atraído por arquiteturas limpas, interações suaves e pelos pequenos detalhes que definem como as coisas são percebidas. Colecionador de quadrinhos há muitos anos, entusiasta de arte e permanentemente supervisionado por dois gatos."
+
+#: src/app/page.tsx:89
+msgid "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned and productive."
+msgstr "Atuei como líder de equipe por cerca de dois anos, apoiando engenheiros por meio de revisões de código, discussões técnicas e decisões do dia a dia. Foco em manter a qualidade do código, incentivar boas práticas de engenharia e ajudar o time a evoluir de forma alinhada e produtiva."
+
+#: src/app/page.tsx:83
+msgid "Building strong working relationships across disciplines."
+msgstr "Construindo relações de trabalho sólidas entre diferentes áreas."
+
+#: src/app/page.tsx:77
+msgid "Collaboration & Agile Delivery"
+msgstr "Colaboração e Entrega Ágil"
+
+#: src/app/page.tsx:84
+msgid "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into well-crafted interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving, aiming to keep collaboration healthy, transparent, and productive."
+msgstr "Confortável em trabalhar de perto com pessoas de diferentes áreas, especialmente designers e stakeholders de produto, transformando ideias em interfaces bem construídas. Frequentemente envolvido em apoiar colegas por meio de discussões, feedbacks e resolução conjunta de problemas, mantendo a colaboração saudável, transparente e produtiva."
+
+#: src/app/page.tsx:82
+msgid "Communication & Team Support"
+msgstr "Comunicação e Suporte ao Time"
+
+#: src/app/page.tsx:135
+msgid "Core Skills"
+msgstr "Competências Principais"
+
+#: src/app/page.tsx:50
+msgid "Experience building component-driven web interfaces with React, focusing on composition, accessibility, and interaction quality. My background in mobile development strongly influences how I structure and design UI on the web."
+msgstr "Experiência na construção de interfaces web baseadas em componentes com React, com foco em composição, acessibilidade e qualidade de interação. Minha experiência em desenvolvimento mobile influencia fortemente a forma como estruturo e desenho interfaces na web."
+
+#: src/app/page.tsx:39
+msgid "Extensive experience using Expo to streamline mobile development workflows, from local tooling to production delivery. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
+msgstr "Experiência sólida com Expo para otimizar fluxos de desenvolvimento mobile, desde ferramentas locais até entrega em produção. Familiaridade com pipelines de build, processos de release e uso do ecossistema do Expo para aumentar a produtividade."
+
+#: src/app/page.tsx:29
+msgid "Forms (react-hook-form)"
+msgstr "Formulários (react-hook-form)"
+
+#: src/app/page.tsx:65
+msgid "Functional patterns"
+msgstr "Padrões funcionais"
+
+#: src/app/page.tsx:79
+msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to breaking down work into meaningful increments, aligning with product goals, and collaborating closely with designers, QA, and backend engineers to keep delivery predictable and focused."
+msgstr "Experiência prática em ambientes baseados em Scrum, contribuindo com planejamento, reviews e retrospectivas. Habituado a dividir o trabalho em incrementos significativos, alinhados aos objetivos do produto, colaborando de perto com designers, QA e engenheiros backend para manter entregas previsíveis e focadas."
+
+#: src/app/page.tsx:121
+msgid "Hi, I'm Vyndrix"
+msgstr "Oi, eu sou o Vyndrix"
+
+#: src/app/page.tsx:88
+msgid "Leading by example, clarity, and technical ownership."
+msgstr "Liderança baseada em exemplo, clareza e responsabilidade técnica."
+
+#: src/app/page.tsx:25
+msgid "My primary platform for the past few years, focused on building and maintaining production mobile applications. Experienced with component architecture, performance considerations, animations, and platform-specific constraints, with an emphasis on clean, scalable codebases."
+msgstr "Minha principal plataforma nos últimos anos, com foco no desenvolvimento e manutenção de aplicações mobile em produção. Experiência com arquitetura de componentes, performance, animações e limitações específicas de cada plataforma, sempre priorizando bases de código limpas e escaláveis."
+
+#: src/app/page.tsx:44
+msgid "Native APIs"
+msgstr "APIs nativas"
+
+#: src/app/page.tsx:66
+msgid "Performance optimization"
+msgstr "Otimização de performance"
+
+#: src/app/page.tsx:158
+msgid "Related skills"
+msgstr "Competências relacionadas"
+
+#: src/app/page.tsx:32
+msgid "State management (Zustand / Jotai)"
+msgstr "Gerenciamento de estado (Zustand / Jotai)"
+
+#: src/app/page.tsx:61
+msgid "Strong command of modern JavaScript, developed through optimizing React and React Native applications. Comfortable with ES6+ features, asynchronous flows, and writing predictable, maintainable logic for complex interfaces."
+msgstr "Domínio sólido de JavaScript moderno, desenvolvido ao otimizar aplicações React e React Native. Confortável com recursos ES6+, fluxos assíncronos e escrita de lógica previsível e de fácil manutenção para interfaces complexas."
+
+#: src/app/page.tsx:87
+msgid "Technical Leadership & Mentorship"
+msgstr "Liderança Técnica e Mentoria"
+
+#: src/app/page.tsx:181
+msgid "Ways of Working"
+msgstr "Formas de Trabalho"
+
+#: src/app/page.tsx:78
+msgid "Working in rhythm with teams to ship iteratively and consistently."
+msgstr "Trabalhando em sintonia com o time para entregar de forma iterativa e consistente."

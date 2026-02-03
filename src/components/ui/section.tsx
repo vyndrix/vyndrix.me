@@ -1,0 +1,22 @@
+import { Base } from "./base";
+
+const Wrapper = ({ children }: { children?: React.ReactNode }) => {
+  return <section className="flex flex-col justify-center">{children}</section>;
+};
+
+const Content = ({ children }: { children: React.ReactNode }) => {
+  return <div className="flex flex-col px-2 gap-6">{children}</div>;
+};
+
+const Title = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <Base.Title size="md" className="mt-6 mb-8">
+      {children}
+    </Base.Title>
+  );
+};
+
+export const Section = Object.assign(Wrapper, {
+  Title,
+  Content,
+});

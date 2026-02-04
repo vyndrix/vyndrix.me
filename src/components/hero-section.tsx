@@ -1,4 +1,4 @@
-import AvatarSource from "@/public/avatar.png";
+import AvatarSource from "@/public/avatar.jpg";
 import { Trans } from "@lingui/react/macro";
 import { Avatar } from "./ui/avatar";
 import { Base } from "./ui/base";

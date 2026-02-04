@@ -12,7 +12,7 @@ const Wrapper = ({
       data-slot="avatar"
       className={cn(
         "transition-colors delay-700 relative flex shrink-0 overflow-hidden rounded-full size-24 bg-foreground/50 border border-muted/50 self-center",
-        className
+        className,
       )}
       {...props}
     />
@@ -26,7 +26,7 @@ const Image = ({
   return (
     <AvatarPrimitive.Image
       data-slot="avatar-image"
-      className={cn("aspect-square size-full", className)}
+      className={cn("aspect-auto size-max", className)}
       {...props}
     />
   );
@@ -41,7 +41,7 @@ const Fallback = ({
       data-slot="avatar-fallback"
       className={cn(
         "bg-muted flex size-full items-center justify-center rounded-full",
-        className
+        className,
       )}
       {...props}
     />

@@ -7,7 +7,7 @@ const variants = cva(
   {
     variants: {
       size: {
-        lg: "text-4xl font-bold",
+        lg: "text-3xl font-medium",
         md: "text-2xl font-medium",
         sm: "text-lg",
         xs: "",
@@ -16,7 +16,7 @@ const variants = cva(
     defaultVariants: {
       size: "lg",
     },
-  }
+  },
 );
 
 export default function Title({

@@ -23,7 +23,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
 };
 
 const Title = ({ children }: { children: React.ReactNode }) => {
-  return <Base.Title size="xs">{children}</Base.Title>;
+  return <Base.Title size="sm">{children}</Base.Title>;
 };
 
 const Subtitle = ({ children }: { children: React.ReactNode }) => {

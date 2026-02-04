@@ -10,7 +10,7 @@ const Content = ({ children }: { children: React.ReactNode }) => {
 
 const Title = ({ children }: { children: React.ReactNode }) => {
   return (
-    <Base.Title size="md" className="mt-6 mb-8">
+    <Base.Title size="md" className=" mt-5 mb-7 md:mt-6 md:mb-8">
       {children}
     </Base.Title>
   );

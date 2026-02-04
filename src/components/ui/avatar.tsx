@@ -11,7 +11,7 @@ const Wrapper = ({
     <AvatarPrimitive.Root
       data-slot="avatar"
       className={cn(
-        "transition-colors delay-700 relative flex shrink-0 overflow-hidden rounded-full size-24 bg-foreground/50 border border-muted/50 self-center",
+        "transition-colors delay-700 bg-muted relative flex shrink-0 overflow-hidden rounded-full size-24 border border-muted/50 self-center",
         className,
       )}
       {...props}

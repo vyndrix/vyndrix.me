@@ -12,7 +12,7 @@ export function HeroSection() {
         <Avatar.Fallback />
       </Avatar>
       <Base.Title size="lg" className="self-center">
-        <Trans>Hi, I'm Vyndrix</Trans>
+        <Trans>Hi, I'm Ramon</Trans>
       </Base.Title>
       <p className="transition-colors delay-700 mt-3 text-xl text-center text-slate-700 dark:text-slate-300">
         <Trans>

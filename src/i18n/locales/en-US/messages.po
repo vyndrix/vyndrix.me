@@ -13,94 +13,74 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/page.tsx:124
-msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences. Drawn to clean architecture, smooth interactions, and the small details that shape how things feel. Long-time comics collector, art enthusiast, and permanently supervised by two cats"
-msgstr "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences. Drawn to clean architecture, smooth interactions, and the small details that shape how things feel. Long-time comics collector, art enthusiast, and permanently supervised by two cats"
+#: src/components/hero-section.tsx:18
+msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties."
+msgstr "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties."
 
-#: src/app/page.tsx:89
-msgid "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned and productive."
-msgstr "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned and productive."
+#: src/data/working-ways.ts:22
+msgid "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned."
+msgstr "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned."
 
-#: src/app/page.tsx:83
+#: src/data/working-ways.ts:16
 msgid "Building strong working relationships across disciplines."
 msgstr "Building strong working relationships across disciplines."
 
-#: src/app/page.tsx:77
+#: src/data/working-ways.ts:10
 msgid "Collaboration & Agile Delivery"
 msgstr "Collaboration & Agile Delivery"
 
-#: src/app/page.tsx:84
-msgid "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into well-crafted interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving, aiming to keep collaboration healthy, transparent, and productive."
-msgstr "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into well-crafted interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving, aiming to keep collaboration healthy, transparent, and productive."
+#: src/data/working-ways.ts:17
+msgid "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving."
+msgstr "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving."
 
-#: src/app/page.tsx:82
+#: src/data/working-ways.ts:15
 msgid "Communication & Team Support"
 msgstr "Communication & Team Support"
 
-#: src/app/page.tsx:135
+#: src/components/skills-section.tsx:16
 msgid "Core Skills"
 msgstr "Core Skills"
 
-#: src/app/page.tsx:50
-msgid "Experience building component-driven web interfaces with React, focusing on composition, accessibility, and interaction quality. My background in mobile development strongly influences how I structure and design UI on the web."
-msgstr "Experience building component-driven web interfaces with React, focusing on composition, accessibility, and interaction quality. My background in mobile development strongly influences how I structure and design UI on the web."
+#: src/data/cards.ts:47
+msgid "Experience building component-driven web interfaces with React. My background in mobile development strongly influences how I structure and design UI on the web."
+msgstr "Experience building component-driven web interfaces with React. My background in mobile development strongly influences how I structure and design UI on the web."
 
-#: src/app/page.tsx:39
-msgid "Extensive experience using Expo to streamline mobile development workflows, from local tooling to production delivery. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
-msgstr "Extensive experience using Expo to streamline mobile development workflows, from local tooling to production delivery. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
+#: src/data/cards.ts:27
+msgid "Extensive experience using Expo to streamline mobile development workflows. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
+msgstr "Extensive experience using Expo to streamline mobile development workflows. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
 
-#: src/app/page.tsx:29
-msgid "Forms (react-hook-form)"
-msgstr "Forms (react-hook-form)"
+#: src/data/working-ways.ts:12
+msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to colabotare and work closely with designers, QA, and backend engineers to keep delivery predictable and focused."
+msgstr "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to colabotare and work closely with designers, QA, and backend engineers to keep delivery predictable and focused."
 
-#: src/app/page.tsx:65
-msgid "Functional patterns"
-msgstr "Functional patterns"
+#: src/components/hero-section.tsx:15
+msgid "Hi, I'm Ramon"
+msgstr "Hi, I'm Ramon"
 
-#: src/app/page.tsx:79
-msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to breaking down work into meaningful increments, aligning with product goals, and collaborating closely with designers, QA, and backend engineers to keep delivery predictable and focused."
-msgstr "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to breaking down work into meaningful increments, aligning with product goals, and collaborating closely with designers, QA, and backend engineers to keep delivery predictable and focused."
-
-#: src/app/page.tsx:121
-msgid "Hi, I'm Vyndrix"
-msgstr "Hi, I'm Vyndrix"
-
-#: src/app/page.tsx:88
+#: src/data/working-ways.ts:21
 msgid "Leading by example, clarity, and technical ownership."
 msgstr "Leading by example, clarity, and technical ownership."
 
-#: src/app/page.tsx:25
-msgid "My primary platform for the past few years, focused on building and maintaining production mobile applications. Experienced with component architecture, performance considerations, animations, and platform-specific constraints, with an emphasis on clean, scalable codebases."
-msgstr "My primary platform for the past few years, focused on building and maintaining production mobile applications. Experienced with component architecture, performance considerations, animations, and platform-specific constraints, with an emphasis on clean, scalable codebases."
+#: src/data/cards.ts:17
+msgid "My primary platform for the past few years. Experienced with component architecture, performance considerations, animations, and platform-specific constraints."
+msgstr "My primary platform for the past few years. Experienced with component architecture, performance considerations, animations, and platform-specific constraints."
 
-#: src/app/page.tsx:44
-msgid "Native APIs"
-msgstr "Native APIs"
-
-#: src/app/page.tsx:66
-msgid "Performance optimization"
-msgstr "Performance optimization"
-
-#: src/app/page.tsx:158
+#: src/components/skills-section.tsx:29
 msgid "Related skills"
 msgstr "Related skills"
 
-#: src/app/page.tsx:32
-msgid "State management (Zustand / Jotai)"
-msgstr "State management (Zustand / Jotai)"
+#: src/data/cards.ts:37
+msgid "Strong command of modern JavaScript standards and patterns. This was developed through optimizing React and React Native applications for the past few years."
+msgstr "Strong command of modern JavaScript standards and patterns. This was developed through optimizing React and React Native applications for the past few years."
 
-#: src/app/page.tsx:61
-msgid "Strong command of modern JavaScript, developed through optimizing React and React Native applications. Comfortable with ES6+ features, asynchronous flows, and writing predictable, maintainable logic for complex interfaces."
-msgstr "Strong command of modern JavaScript, developed through optimizing React and React Native applications. Comfortable with ES6+ features, asynchronous flows, and writing predictable, maintainable logic for complex interfaces."
-
-#: src/app/page.tsx:87
+#: src/data/working-ways.ts:20
 msgid "Technical Leadership & Mentorship"
 msgstr "Technical Leadership & Mentorship"
 
-#: src/app/page.tsx:181
-msgid "Ways of Working"
-msgstr "Ways of Working"
-
-#: src/app/page.tsx:78
+#: src/data/working-ways.ts:11
 msgid "Working in rhythm with teams to ship iteratively and consistently."
 msgstr "Working in rhythm with teams to ship iteratively and consistently."
+
+#: src/components/working-ways-section.tsx:13
+msgid "Working Ways"
+msgstr "Working Ways"

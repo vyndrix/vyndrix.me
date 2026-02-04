@@ -17,23 +17,23 @@ const Wrapper = ({
       ref={scope}
       style={style}
       className={cn(
-        `
-        flex 
-        flex-col  
-        gap-1 
+        `flex
+        flex-col
+        gap-1
+        mx-2
+        sm:mx-0
         p-4
-        bg-background 
-        border 
-        rounded-xl 
-        transition-colors 
-        ease-in-out 
-        hover:bg-card-background 
-        hover:border-foreground/3 
-        hover:duration-250 
-        duration-700 
-        motion-reduce:duration-0 
-      `,
-        className
+        bg-background
+        border
+        rounded-xl
+        transition-colors
+        ease-in-out
+        hover:bg-card-background
+        hover:border-foreground/3
+        hover:duration-250
+        duration-700
+        motion-reduce:duration-0`,
+        className,
       )}
     >
       {children}

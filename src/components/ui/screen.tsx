@@ -21,7 +21,7 @@ export function Screen({ children }: { children: React.ReactNode }) {
           duration: shouldReduceMotion ? 0 : 0.375,
           ease: [0.4, 0, 0.2, 1],
         }}
-        className="flex flex-col gap-6 basis-2xl md:basis-3xl p-4 sm:p-2 my-4 mb-16"
+        className="flex flex-col gap-6 basis-2xl md:basis-3xl p-4 my-4 mb-16"
       >
         {children}
       </motion.div>

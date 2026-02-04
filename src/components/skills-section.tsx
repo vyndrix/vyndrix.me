@@ -18,7 +18,7 @@ export function SkillsSection() {
       <Section.Content>
         <Grid>
           {cds.map((cd, i) => (
-            <Card key={i} className="col-span-14 col-start-2 sm:col-span-1">
+            <Card key={i}>
               <Card.Header>
                 <Icon icon={cd.icon} />
                 <Card.Title size="lg">{cd.name}</Card.Title>

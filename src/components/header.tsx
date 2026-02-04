@@ -17,18 +17,22 @@ export function Header() {
   const openEmail = useURI(EMAIL_URI, "_self");
 
   return (
-    <header className="flex justify-end top-0 p-4 gap-2">
-      <Button onClick={openGitHub}>
-        <Icon icon="github" className="h-[1.2rem] w-[1.2rem]" />
-      </Button>
-      <Button onClick={openLinkedin}>
-        <Icon icon="linkedin" className="h-[1.2rem] w-[1.2rem]" />
-      </Button>
-      <Button onClick={openEmail}>
-        <Mail className="h-[1.2rem] w-[1.2rem]" />
-      </Button>
-      <LocaleSwitch />
-      <ThemeSwitch />
+    <header className="flex justify-between sm:justify-end top-0 p-4 gap-2">
+      <div className="flex">
+        <Button onClick={openGitHub}>
+          <Icon icon="github" className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+        <Button onClick={openLinkedin}>
+          <Icon icon="linkedin" className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+        <Button onClick={openEmail}>
+          <Mail className="h-[1.2rem] w-[1.2rem]" />
+        </Button>
+      </div>
+      <div className="flex">
+        <LocaleSwitch />
+        <ThemeSwitch />
+      </div>
     </header>
   );
 }

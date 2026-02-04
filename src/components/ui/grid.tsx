@@ -8,8 +8,6 @@ export function Grid({
   className?: string;
 }) {
   return (
-    <div className={cn("grid grid-cols-16 sm:grid-cols-2 gap-4", className)}>
-      {children}
-    </div>
+    <div className={cn("grid sm:grid-cols-2 gap-4", className)}>{children}</div>
   );
 }

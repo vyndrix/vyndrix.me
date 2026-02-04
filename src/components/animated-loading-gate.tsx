@@ -1,4 +1,3 @@
-import { Header } from "@/components/header";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
 interface Props {
@@ -6,7 +5,7 @@ interface Props {
   loading: boolean;
 }
 
-export function LoadingGate({ children, loading }: Props) {
+export function AnimatedLoadingGate({ children, loading }: Props) {
   const shouldReduceMotion = useReducedMotion();
 
   return (
@@ -23,8 +22,7 @@ export function LoadingGate({ children, loading }: Props) {
             ease: [0.4, 0, 0.2, 1],
           }}
         >
-          <Header />
-          <main className="flex justify-center">{children}</main>
+          {children}
         </motion.div>
       ) : null}
     </AnimatePresence>

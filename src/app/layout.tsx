@@ -2,7 +2,8 @@
 
 // import type { Metadata } from "next";
 import "@/app/globals.css";
-import { LoadingGate } from "@/i18n/loading-gate";
+import { AnimatedLoadingGate } from "@/components/animated-loading-gate";
+import { Header } from "@/components/header";
 import { useInitializeI18n } from "@/i18n/use-initialize-i18n";
 import { I18nProvider } from "@lingui/react";
 import { ThemeProvider } from "next-themes";
@@ -53,7 +54,10 @@ export default function RootLayout({ children }: Props) {
           enableSystem
         >
           <I18nProvider i18n={i18n}>
-            <LoadingGate loading={loading}>{children}</LoadingGate>
+            <AnimatedLoadingGate loading={loading}>
+              <Header />
+              {children}
+            </AnimatedLoadingGate>
           </I18nProvider>
         </ThemeProvider>
       </body>

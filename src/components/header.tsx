@@ -18,13 +18,13 @@ export function Header() {
 
   return (
     <header className="flex justify-end top-0 p-4 gap-2">
-      <Button variant="ghost" size="icon-lg" onClick={openGitHub}>
+      <Button onClick={openGitHub}>
         <Icon icon="github" className="h-[1.2rem] w-[1.2rem]" />
       </Button>
-      <Button variant="ghost" size="icon-lg" onClick={openLinkedin}>
+      <Button onClick={openLinkedin}>
         <Icon icon="linkedin" className="h-[1.2rem] w-[1.2rem]" />
       </Button>
-      <Button variant="ghost" size="icon-lg" onClick={openEmail}>
+      <Button onClick={openEmail}>
         <Mail className="h-[1.2rem] w-[1.2rem]" />
       </Button>
       <LocaleSwitch />

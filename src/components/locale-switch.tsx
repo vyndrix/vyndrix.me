@@ -6,7 +6,7 @@ export const LocaleSwitch = () => {
   const { locale, toggleLocale } = useLocale();
 
   return (
-    <Button variant="ghost" size="icon-lg" onClick={toggleLocale}>
+    <Button onClick={toggleLocale}>
       <AnimatePresence initial={false}>
         {locale === "pt-BR" ? (
           <Locale

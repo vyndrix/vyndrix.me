@@ -53,12 +53,12 @@ export default function RootLayout({ children }: Props) {
           defaultTheme="system"
           enableSystem
         >
-          <I18nProvider i18n={i18n}>
-            <AnimatedLoadingGate loading={loading}>
+          <AnimatedLoadingGate loading={loading}>
+            <I18nProvider i18n={i18n}>
               <Header />
               {children}
-            </AnimatedLoadingGate>
-          </I18nProvider>
+            </I18nProvider>
+          </AnimatedLoadingGate>
         </ThemeProvider>
       </body>
     </html>

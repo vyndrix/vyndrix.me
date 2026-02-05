@@ -1,13 +1,84 @@
-"use client";
-
-// import type { Metadata } from "next";
 import "@/app/globals.css";
-import { AnimatedLoadingGate } from "@/components/animated-loading-gate";
 import { Header } from "@/components/header";
-import { useInitializeI18n } from "@/i18n/use-initialize-i18n";
-import { I18nProvider } from "@lingui/react";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "@/components/providers";
+import { Metadata, Viewport } from "next";
 import { Inter, Inter_Tight } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "Vyndrix | Ramon Fernandes",
+  description:
+    "Digital craftsman and developer, in search of the perfect layout.",
+  authors: [{ name: "Ramon Fernandes", url: "https://vyndrix.me" }],
+  applicationName: "Vyndrix",
+  keywords: [
+    "Next.js",
+    "React",
+    "React Native",
+    "TypeScript",
+    "JavaScript",
+    "Web Development",
+    "Frontend",
+    "Portfolio",
+    "Ramon Fernandes",
+    "Vyndrix",
+    "Software Engineer",
+    "Web Designer",
+    "Tech Enthusiast",
+    "Coding",
+    "Open Source",
+    "Tech Blog",
+    "Developer Portfolio",
+  ],
+  openGraph: {
+    title: "Vyndrix | Ramon Fernandes",
+    description:
+      "Digital craftsman and developer, in search of the perfect layout.",
+    url: "https://vyndrix.me",
+    siteName: "Vyndrix",
+    locale: "en_US",
+    type: "website",
+  },
+  icons: {
+    icon: [
+      {
+        url: "/favicons/favicon.ico",
+        sizes: "any",
+      },
+      {
+        url: "/favicons/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/favicons/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    apple: "/favicons/apple-touch-icon.png",
+  },
+};
+
+/**
+ * *** ATTENTION ***
+ *
+ * Very sensitive information is is being accessed in this file, which are:
+ *
+ * - Light and Dark colors. Inlined here reflecting globals.css definition. Might mismatch.
+ *
+ * TODO-THEME:
+ *      - Create a theme folder, and move globals.css into it -- Finally! --
+ *      - Create a constants file for the theme and store global colors there
+ *      - Remove colors from globals.css and inject them on init
+ */
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#020618" },
+  ],
+};
 
 const inter = Inter({
   subsets: ["latin"],
@@ -26,11 +97,8 @@ type Props = Readonly<{
 }>;
 
 export default function RootLayout({ children }: Props) {
-  const { loading, i18n } = useInitializeI18n();
-
   return (
     <html
-      data-ready={!loading}
       suppressHydrationWarning
       className={`data-ready:transition-colors 
           data-ready:duration-750 
@@ -38,7 +106,6 @@ export default function RootLayout({ children }: Props) {
           motion-reduce:duration-0`}
     >
       <body
-        data-ready={!loading}
         className={`${inter.variable} 
           ${interTight.variable} 
           data-ready:transition-colors 
@@ -47,19 +114,10 @@ export default function RootLayout({ children }: Props) {
           motion-reduce:duration-0 
           antialiased`}
       >
-        <ThemeProvider
-          storageKey="theme"
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-        >
-          <AnimatedLoadingGate loading={loading}>
-            <I18nProvider i18n={i18n}>
-              <Header />
-              {children}
-            </I18nProvider>
-          </AnimatedLoadingGate>
-        </ThemeProvider>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   );

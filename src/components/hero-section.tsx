@@ -9,7 +9,7 @@ export function HeroSection() {
     <Section>
       <Avatar>
         <Avatar.Image src={AvatarSource.src} />
-        <Avatar.Fallback delayMs={600}>
+        <Avatar.Fallback delayMs={1500}>
           <span className="text-3xl">RF</span>
         </Avatar.Fallback>
       </Avatar>

@@ -1,9 +1,50 @@
 import { useMouseOverAnimation } from "@/hooks/use-mouse-over-animation";
+import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import { Base } from "./base";
-import { cn } from "@/lib/utils";
+
+const WRAPPER_STYLES: string = `flex
+                                flex-col
+                                gap-1
+                                mx-2
+                                sm:mx-0
+                                p-4
+                                bg-background
+                                border
+                                rounded-xl
+                                transition-colors
+                                ease-in-out
+                                motion-reduce:duration-0
+                                duration-700`;
 
 const Wrapper = ({
+  children,
+  className,
+  animated = false,
+}: {
+  children: React.ReactNode;
+  className?: string;
+  animated?: boolean;
+}) => {
+  if (animated)
+    return <AnimatedWrapper className={className}>{children}</AnimatedWrapper>;
+
+  return <RegularWrapper className={className}>{children}</RegularWrapper>;
+};
+
+const RegularWrapper = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <article className={cn(WRAPPER_STYLES, className)}>{children}</article>
+  );
+};
+
+const AnimatedWrapper = ({
   children,
   className,
 }: {
@@ -17,22 +58,8 @@ const Wrapper = ({
       ref={scope}
       style={style}
       className={cn(
-        `flex
-        flex-col
-        gap-1
-        mx-2
-        sm:mx-0
-        p-4
-        bg-background
-        border
-        rounded-xl
-        transition-colors
-        ease-in-out
-        hover:bg-card-background
-        hover:border-foreground/3
-        hover:duration-250
-        duration-700
-        motion-reduce:duration-0`,
+        "hover:bg-card-background hover:border-foreground/3 hover:duration-250",
+        WRAPPER_STYLES,
         className,
       )}
     >

@@ -1,4 +1,5 @@
 import cds from "@/data/cards";
+import { useIsDesktopLike } from "@/hooks/use-is-desktop-like";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
 import { Badge } from "./ui/badge";
@@ -9,6 +10,7 @@ import { Section } from "./ui/section";
 
 export function SkillsSection() {
   const { _ } = useLingui();
+  const isDesktopLike = useIsDesktopLike();
 
   return (
     <Section>
@@ -18,7 +20,7 @@ export function SkillsSection() {
       <Section.Content>
         <Grid>
           {cds.map((cd, i) => (
-            <Card key={i}>
+            <Card key={i} animated={isDesktopLike}>
               <Card.Header>
                 <Icon icon={cd.icon} />
                 <Card.Title size="lg">{cd.name}</Card.Title>

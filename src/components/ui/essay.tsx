@@ -1,6 +1,6 @@
 import { Base } from "./base";
 
-const Wrapper = ({ children }: { children: React.ReactNode }) => {
+const Essay = ({ children }: { children: React.ReactNode }) => {
   return (
     <article
       className={`flex 
@@ -34,7 +34,7 @@ const Content = ({ children }: { children: React.ReactNode }) => {
   return <p className="text-md text-muted-foreground">{children}</p>;
 };
 
-export const Essay = Object.assign(Wrapper, {
+export default Object.assign(Essay, {
   Header,
   Title,
   Subtitle,

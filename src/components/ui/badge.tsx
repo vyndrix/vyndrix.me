@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Icon as AppIcon } from "./icon";
+import AppIcon from "./icon";
 
 import { cn } from "@/lib/utils";
 
@@ -8,7 +8,7 @@ interface Props {
   className?: string;
 }
 
-const Wrapper = ({ children, className }: Props) => {
+const Badge = ({ children, className }: Props) => {
   return (
     <span
       className={cn(
@@ -30,7 +30,7 @@ const Wrapper = ({ children, className }: Props) => {
         font-medium
         [&>svg]:size-3.5
         [&>svg]:pointer-events-none`,
-        className
+        className,
       )}
     >
       {children}
@@ -53,7 +53,7 @@ const Icon = ({
       {...props}
       className={cn(
         "transition-colors delay-700 mr-2 w-6 h-6 text-slate-900 dark:text-slate-100",
-        className
+        className,
       )}
     />
   );
@@ -64,7 +64,7 @@ const Text = ({ children, className }: Props) => {
     <span
       className={cn(
         "transition-colors delay-700 text-slate-900 dark:text-slate-100",
-        className
+        className,
       )}
     >
       {children}
@@ -72,7 +72,7 @@ const Text = ({ children, className }: Props) => {
   );
 };
 
-export const Badge = Object.assign(Wrapper, {
+export default Object.assign(Badge, {
   Group,
   Icon,
   Text,

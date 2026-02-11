@@ -4,8 +4,7 @@ import { useURI } from "@/hooks/use-uri";
 import { Mail } from "lucide-react";
 import { LocaleSwitch } from "./locale-switch";
 import ThemeSwitch from "./theme-switch";
-import { Button } from "./ui/button";
-import { Icon } from "./ui/icon";
+import { Button, Icon } from "./ui";
 
 const LINKEDIN_URI = "https://www.linkedin.com/in/ramon-fernandes-40a6b5122/";
 const GITHUB_URI = "https://github.com/vyndrix";

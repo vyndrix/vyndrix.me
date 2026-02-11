@@ -49,7 +49,7 @@ interface Props {
 
 export type IconsNames = keyof typeof sources;
 
-export function Icon({ icon, className }: Props) {
+export default function Icon({ icon, className }: Props) {
   const Comp = sources[icon];
   return <Comp className={cn("w-6 h-6", className)} />;
 }

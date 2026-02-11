@@ -1,6 +1,6 @@
 import { useLocale } from "@/i18n/use-locale";
 import { AnimatePresence, motion, TargetAndTransition } from "motion/react";
-import { Button } from "./ui/button";
+import { Button } from "./ui";
 
 export const LocaleSwitch = () => {
   const { locale, toggleLocale } = useLocale();

@@ -2,11 +2,7 @@ import cds from "@/data/cards";
 import { useIsDesktopLike } from "@/hooks/use-is-desktop-like";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { Badge } from "./ui/badge";
-import { Card } from "./ui/card";
-import { Grid } from "./ui/grid";
-import { Icon } from "./ui/icon";
-import { Section } from "./ui/section";
+import { Badge, Card, Grid, Icon, Section } from "./ui";
 
 export function SkillsSection() {
   const { _ } = useLingui();

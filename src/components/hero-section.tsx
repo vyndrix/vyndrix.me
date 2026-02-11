@@ -1,8 +1,7 @@
 import AvatarSource from "@/public/avatar.jpg";
 import { Trans } from "@lingui/react/macro";
-import { Avatar } from "./ui/avatar";
+import { Avatar, Section } from "./ui";
 import { Base } from "./ui/base";
-import { Section } from "./ui/section";
 
 export function HeroSection() {
   return (

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-export function Grid({
+export default function Grid({
   children,
   className,
 }: {

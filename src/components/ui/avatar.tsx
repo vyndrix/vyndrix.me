@@ -3,7 +3,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-const Wrapper = ({
+const Avatar = ({
   className,
   ...props
 }: React.ComponentProps<typeof AvatarPrimitive.Root>) => {
@@ -48,7 +48,7 @@ const Fallback = ({
   );
 };
 
-export const Avatar = Object.assign(Wrapper, {
+export default Object.assign(Avatar, {
   Image,
   Fallback,
 });

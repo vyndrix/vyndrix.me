@@ -17,7 +17,7 @@ const WRAPPER_STYLES: string = `flex
                                 motion-reduce:duration-0
                                 duration-700`;
 
-const Wrapper = ({
+const Card = ({
   children,
   className,
   animated = false,
@@ -108,7 +108,7 @@ const Footer = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const Card = Object.assign(Wrapper, {
+export default Object.assign(Card, {
   Title,
   Header,
   Footer,

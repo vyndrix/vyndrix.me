@@ -1,6 +1,6 @@
 import { Base } from "./base";
 
-const Wrapper = ({ children }: { children?: React.ReactNode }) => {
+const Section = ({ children }: { children?: React.ReactNode }) => {
   return <section className="flex flex-col justify-center">{children}</section>;
 };
 
@@ -16,7 +16,7 @@ const Title = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export const Section = Object.assign(Wrapper, {
+export default Object.assign(Section, {
   Title,
   Content,
 });

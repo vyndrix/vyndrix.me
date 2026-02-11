@@ -1,7 +1,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useTheme } from "next-themes";
 
-export function Screen({ children }: { children: React.ReactNode }) {
+export default function Screen({ children }: { children: React.ReactNode }) {
   const { theme } = useTheme();
   const shouldReduceMotion = useReducedMotion();
 

@@ -2,7 +2,6 @@ import "@/app/globals.css";
 import { Header } from "@/components/header";
 import { Providers } from "@/components/providers";
 import { Metadata, Viewport } from "next";
-import { Inter, Inter_Tight } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Vyndrix | Ramon Fernandes",
@@ -80,18 +79,6 @@ export const viewport: Viewport = {
   ],
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter-sans",
-});
-
-const interTight = Inter_Tight({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter-tight",
-});
-
 type Props = Readonly<{
   children: React.ReactNode;
 }>;
@@ -106,9 +93,7 @@ export default function RootLayout({ children }: Props) {
           motion-reduce:duration-0`}
     >
       <body
-        className={`${inter.variable} 
-          ${interTight.variable} 
-          data-ready:transition-colors 
+        className={`data-ready:transition-colors 
           data-ready:duration-750 
           data-ready:ease-in-out 
           motion-reduce:duration-0 

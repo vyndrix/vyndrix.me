@@ -22,7 +22,7 @@ export function useMouseOverAnimation() {
           rotateX: `${10 * xRatting - 5}deg`,
           rotateY: `${(10 * yRatting - 5) * -1}deg`,
           rotateZ: `${2 * yRatting - 1}deg`,
-          scale: 1.02,
+          scale: 1.05,
           zIndex: 20,
         },
         {

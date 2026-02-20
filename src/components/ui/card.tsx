@@ -11,7 +11,6 @@ const WRAPPER_STYLES: string = `flex
                                 p-4
                                 bg-background
                                 border
-                                rounded-xl
                                 transition-colors
                                 ease-in-out
                                 motion-reduce:duration-0
@@ -58,7 +57,7 @@ const AnimatedWrapper = ({
       ref={scope}
       style={style}
       className={cn(
-        "hover:bg-card-background hover:border-foreground/3 hover:duration-250",
+        "hover:bg-card-background hover:duration-250",
         WRAPPER_STYLES,
         className,
       )}

@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="flex justify-between sm:justify-end top-0 p-4 gap-2">
-      <div className="flex">
+      <div className="flex gap-2">
         <Button onClick={openGitHub}>
           <Icon icon="github" className="h-[1.2rem] w-[1.2rem]" />
         </Button>
@@ -28,7 +28,7 @@ export function Header() {
           <Mail className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </div>
-      <div className="flex">
+      <div className="flex gap-2">
         <LocaleSwitch />
         <ThemeSwitch />
       </div>

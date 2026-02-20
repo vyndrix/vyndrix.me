@@ -37,9 +37,9 @@
   --sidebar-accent-foreground: oklch(0.3772 0.0619 212.664);
   --sidebar-border: oklch(0.8931 0.0205 204.4136);
   --sidebar-ring: oklch(0.5624 0.0947 203.2755);
-  --font-sans: Courier New, monospace;
-  --font-serif: Courier New, monospace;
-  --font-mono: Courier New, monospace;
+  --font-sans: Source Code Pro, monospace;
+  --font-serif: Source Code Pro, monospace;
+  --font-mono: Source Code Pro, monospace;
   --radius: 0.125rem;
   --shadow-x: 1px;
   --shadow-y: 1px;

@@ -2,22 +2,19 @@ import { cva, VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const variants = cva(
-  "transition-colors delay-700 text-slate-900 dark:text-slate-100",
-  {
-    variants: {
-      size: {
-        lg: "text-3xl font-medium",
-        md: "text-2xl font-medium",
-        sm: "text-lg",
-        xs: "",
-      },
-    },
-    defaultVariants: {
-      size: "lg",
+const variants = cva("transition-colors delay-700 text-foreground", {
+  variants: {
+    size: {
+      lg: "text-3xl font-medium",
+      md: "text-2xl font-medium",
+      sm: "text-lg",
+      xs: "",
     },
   },
-);
+  defaultVariants: {
+    size: "lg",
+  },
+});
 
 export default function Title({
   className,

@@ -22,7 +22,6 @@ const Badge = ({ children, className }: Props) => {
         motion-reduce:duration-0
         items-center
         justify-center
-        rounded-full
         border
         px-2
         py-1
@@ -52,7 +51,7 @@ const Icon = ({
     <AppIcon
       {...props}
       className={cn(
-        "transition-colors delay-700 mr-2 w-6 h-6 text-slate-900 dark:text-slate-100",
+        "transition-colors delay-700 mr-2 w-6 h-6 text-foreground",
         className,
       )}
     />
@@ -62,10 +61,7 @@ const Icon = ({
 const Text = ({ children, className }: Props) => {
   return (
     <span
-      className={cn(
-        "transition-colors delay-700 text-slate-900 dark:text-slate-100",
-        className,
-      )}
+      className={cn("transition-colors delay-700 text-foreground", className)}
     >
       {children}
     </span>

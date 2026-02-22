@@ -1,21 +1,52 @@
+import { aerostats } from "@/data/aerostats";
 import AvatarSource from "@/public/avatar.jpg";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { Avatar, Section } from "./ui";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+import { AnimatePresence } from "motion/react";
+import { useState } from "react";
+import { Aerostat } from "./aerostat";
+import { useFloatPositionObserver } from "./aerostat/use-aerostat-postition-observer";
+import { Avatar, Dialog, Section } from "./ui";
 import { Base } from "./ui/base";
 
 export function HeroSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <Section>
-      <Avatar>
-        <Avatar.Image src={AvatarSource.src} />
-        <Avatar.Fallback delayMs={1500}>
-          <span className="text-3xl">RF</span>
-        </Avatar.Fallback>
-      </Avatar>
+      <Dialog open={open} onOpenChange={setOpen}>
+        <Avatar>
+          <Dialog.Trigger className="cursor-pointer" asChild>
+            <Avatar.Image src={AvatarSource.src} />
+          </Dialog.Trigger>
+          <Avatar.Fallback delayMs={1500}>
+            <span className="text-3xl">RF</span>
+          </Avatar.Fallback>
+        </Avatar>
+        <Dialog.Content showCloseButton={false} aria-describedby={undefined}>
+          <VisuallyHidden asChild>
+            <Dialog.Title>
+              <Trans>Vyndrix | Ramon Fernandes picture</Trans>
+            </Dialog.Title>
+          </VisuallyHidden>
+          <Aerostat.Provider>
+            <Image open={open} />
+          </Aerostat.Provider>
+          <Dialog.Footer className="flex justify-center">
+            <span className="text-center text-xs text-foreground">
+              <Trans>
+                Enjoying the day with my girlfriend at the sports store
+              </Trans>
+            </span>
+          </Dialog.Footer>
+        </Dialog.Content>
+      </Dialog>
       <Base.Title size="lg" className="self-center mt-2 mb-3">
         <Trans>Hi, I'm Ramon</Trans>
       </Base.Title>
-      <p className="transition-colors delay-700 text-lg text-center text-slate-700 dark:text-slate-300">
+      <p className="transition-colors delay-700 text-lg text-center text-foreground">
         <Trans>
           A frontend and mobile developer focused on growing as a specialist in
           modern interfaces and design-driven experiences, which is also a
@@ -26,3 +57,32 @@ export function HeroSection() {
     </Section>
   );
 }
+
+const Image = ({ open }: { open: boolean }) => {
+  const { _ } = useLingui();
+  const ref = useFloatPositionObserver<HTMLImageElement>();
+
+  return (
+    <div className="flex">
+      <img ref={ref} src={AvatarSource.src} alt={_(msg`Vyndrix's picture`)} />
+      <AnimatePresence mode="wait">
+        {open && (
+          <Aerostat.Group>
+            {aerostats.map((float, index) => (
+              <Aerostat.Dialog
+                key={index}
+                position={float.position}
+                withArrow={float.withArrow}
+                className="text-xl sm:text-2xl"
+              >
+                {typeof float.content !== "string"
+                  ? _(float.content)
+                  : float.content}
+              </Aerostat.Dialog>
+            ))}
+          </Aerostat.Group>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};

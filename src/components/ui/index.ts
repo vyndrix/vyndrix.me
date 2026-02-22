@@ -2,6 +2,7 @@ export { default as Avatar } from "./avatar";
 export { default as Badge } from "./badge";
 export { default as Button } from "./button";
 export { default as Card } from "./card";
+export { default as Dialog } from "./dialog";
 export { default as Essay } from "./essay";
 export { default as Grid } from "./grid";
 export { default as Icon } from "./icon";

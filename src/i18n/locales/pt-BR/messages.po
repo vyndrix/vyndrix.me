@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/hero-section.tsx:18
+#: src/components/hero-section.tsx:50
 msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties."
 msgstr "Desenvolvedor frontend e mobile focado em evoluir como especialista em interfaces modernas e experiências guiadas por design, além de colecionador de quadrinhos de longa data, permanentemente supervisionado por dois gatinhos preguiçosos."
 
@@ -37,9 +37,13 @@ msgstr "Confortável em trabalhar de perto com pessoas de diferentes funções, 
 msgid "Communication & Team Support"
 msgstr "Comunicação e Suporte ao Time"
 
-#: src/components/skills-section.tsx:16
+#: src/components/skills-section.tsx:14
 msgid "Core Skills"
 msgstr "Competências Principais"
+
+#: src/components/hero-section.tsx:39
+msgid "Enjoying the day with my girlfriend at the sports store"
+msgstr "Aproveitando o dia com minha namorada na loja de esportes"
 
 #: src/data/cards.ts:47
 msgid "Experience building component-driven web interfaces with React. My background in mobile development strongly influences how I structure and design UI on the web."
@@ -53,7 +57,11 @@ msgstr "Experiência ampla no uso do Expo para otimizar fluxos de desenvolviment
 msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to colabotare and work closely with designers, QA, and backend engineers to keep delivery predictable and focused."
 msgstr "Experiência prática em ambientes baseados em Scrum, contribuindo em planejamentos, reviews e retrospectivas. Acostumado a colaborar de perto com designers, QA e engenheiros backend para manter entregas previsíveis e focadas."
 
-#: src/components/hero-section.tsx:15
+#: src/data/aerostats.ts:11
+msgid "Hi 😄"
+msgstr "Olá 😄"
+
+#: src/components/hero-section.tsx:47
 msgid "Hi, I'm Ramon"
 msgstr "Olá, eu sou Ramon"
 
@@ -65,7 +73,7 @@ msgstr "Liderança baseada em exemplo, clareza e responsabilidade técnica."
 msgid "My primary platform for the past few years. Experienced with component architecture, performance considerations, animations, and platform-specific constraints."
 msgstr "Minha principal plataforma nos últimos anos. Experiência com arquitetura de componentes, considerações de performance, animações e limitações específicas da plataforma."
 
-#: src/components/skills-section.tsx:29
+#: src/components/skills-section.tsx:27
 msgid "Related skills"
 msgstr "Competências relacionadas"
 
@@ -77,10 +85,18 @@ msgstr "Domínio sólido dos padrões e práticas modernas de JavaScript, desenv
 msgid "Technical Leadership & Mentorship"
 msgstr "Liderança Técnica e Mentoria"
 
+#: src/components/hero-section.tsx:31
+msgid "Vyndrix | Ramon Fernandes picture"
+msgstr "Foto de Vyndrix | Ramon Fernandes"
+
+#: src/components/hero-section.tsx:67
+msgid "Vyndrix's picture"
+msgstr "Foto de Vyndrix"
+
 #: src/data/working-ways.ts:11
 msgid "Working in rhythm with teams to ship iteratively and consistently."
 msgstr "Trabalhando em sintonia com o time para entregar de forma iterativa e consistente."
 
-#: src/components/working-ways-section.tsx:13
+#: src/components/working-ways-section.tsx:12
 msgid "Working Ways"
 msgstr "Formas de Trabalho"

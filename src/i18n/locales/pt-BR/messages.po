@@ -13,25 +13,25 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/hero-section.tsx:50
-msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties."
-msgstr "Desenvolvedor frontend e mobile focado em evoluir como especialista em interfaces modernas e experiências guiadas por design, além de colecionador de quadrinhos de longa data, permanentemente supervisionado por dois gatinhos preguiçosos."
+#: src/components/hero-section.tsx:51
+msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties"
+msgstr "Desenvolvedor frontend e mobile focado em evoluir como especialista em interfaces modernas e experiências guiadas por design, além de colecionador de quadrinhos de longa data, permanentemente supervisionado por dois gatinhos preguiçosos"
 
 #: src/data/working-ways.ts:22
-msgid "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned."
-msgstr "Atuou como líder de equipe por cerca de dois anos, apoiando engenheiros por meio de revisões de código, discussões técnicas e decisões do dia a dia. Com foco em manter a qualidade do código, incentivar boas práticas de engenharia e ajudar no crescimento dos colegas, mantendo o time alinhado."
+msgid "Acted as a team lead for around two years, supporting engineers through code reviews, technical discussions, and day-to-day decision making. Focused on maintaining code quality, encouraging good engineering practices, and helping teammates grow while keeping the team aligned"
+msgstr "Atuou como líder de equipe por cerca de dois anos, apoiando engenheiros por meio de revisões de código, discussões técnicas e decisões do dia a dia. Com foco em manter a qualidade do código, incentivar boas práticas de engenharia e ajudar no crescimento dos colegas, mantendo o time alinhado"
 
 #: src/data/working-ways.ts:16
-msgid "Building strong working relationships across disciplines."
-msgstr "Construindo relações de trabalho sólidas entre diferentes áreas."
+msgid "Building strong working relationships across disciplines"
+msgstr "Construindo relações de trabalho sólidas entre diferentes áreas"
 
 #: src/data/working-ways.ts:10
 msgid "Collaboration & Agile Delivery"
 msgstr "Colaboração e Entrega Ágil"
 
 #: src/data/working-ways.ts:17
-msgid "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving."
-msgstr "Confortável em trabalhar de perto com pessoas de diferentes funções, especialmente designers e stakeholders de produto, transformando ideias em interfaces. Frequentemente envolvido no apoio ao time por meio de discussões, feedbacks e resolução colaborativa de problemas."
+msgid "Comfortable working closely with people from different roles, especially designers and product stakeholders, to turn ideas into interfaces. Often involved in supporting teammates through discussions, feedback, and shared problem-solving"
+msgstr "Confortável em trabalhar de perto com pessoas de diferentes funções, especialmente designers e stakeholders de produto, transformando ideias em interfaces. Frequentemente envolvido no apoio ao time por meio de discussões, feedbacks e resolução colaborativa de problemas"
 
 #: src/data/working-ways.ts:15
 msgid "Communication & Team Support"
@@ -41,61 +41,61 @@ msgstr "Comunicação e Suporte ao Time"
 msgid "Core Skills"
 msgstr "Competências Principais"
 
-#: src/components/hero-section.tsx:39
+#: src/components/hero-section.tsx:40
 msgid "Enjoying the day with my girlfriend at the sports store"
 msgstr "Aproveitando o dia com minha namorada na loja de esportes"
 
 #: src/data/cards.ts:47
-msgid "Experience building component-driven web interfaces with React. My background in mobile development strongly influences how I structure and design UI on the web."
-msgstr "Experiência na construção de interfaces web orientadas a componentes com React. Minha vivência em desenvolvimento mobile influencia fortemente a forma como estruturo e desenho interfaces na web."
+msgid "Experience building component-driven web interfaces with React. My background in mobile development strongly influences how I structure and design UI on the web"
+msgstr "Experiência na construção de interfaces web orientadas a componentes com React. Minha vivência em desenvolvimento mobile influencia fortemente a forma como estruturo e desenho interfaces na web"
 
 #: src/data/cards.ts:27
-msgid "Extensive experience using Expo to streamline mobile development workflows. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity."
-msgstr "Experiência ampla no uso do Expo para otimizar fluxos de desenvolvimento mobile. Familiaridade com pipelines de build, processos de release e uso do ecossistema do Expo para aumentar a produtividade."
+msgid "Extensive experience using Expo to streamline mobile development workflows. Familiar with build pipelines, release processes, and leveraging Expo’s ecosystem to improve developer productivity"
+msgstr "Experiência ampla no uso do Expo para otimizar fluxos de desenvolvimento mobile. Familiaridade com pipelines de build, processos de release e uso do ecossistema do Expo para aumentar a produtividade"
 
 #: src/data/working-ways.ts:12
-msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to colabotare and work closely with designers, QA, and backend engineers to keep delivery predictable and focused."
-msgstr "Experiência prática em ambientes baseados em Scrum, contribuindo em planejamentos, reviews e retrospectivas. Acostumado a colaborar de perto com designers, QA e engenheiros backend para manter entregas previsíveis e focadas."
+msgid "Hands-on experience working in Scrum-based environments, contributing to planning, reviews, and retrospectives. Used to colabotare and work closely with designers, QA, and backend engineers to keep delivery predictable and focused"
+msgstr "Experiência prática em ambientes baseados em Scrum, contribuindo em planejamentos, reviews e retrospectivas. Acostumado a colaborar de perto com designers, QA e engenheiros backend para manter entregas previsíveis e focadas"
 
 #: src/data/aerostats.ts:11
 msgid "Hi 😄"
 msgstr "Olá 😄"
 
-#: src/components/hero-section.tsx:47
+#: src/components/hero-section.tsx:48
 msgid "Hi, I'm Ramon"
 msgstr "Olá, eu sou Ramon"
 
 #: src/data/working-ways.ts:21
-msgid "Leading by example, clarity, and technical ownership."
-msgstr "Liderança baseada em exemplo, clareza e responsabilidade técnica."
+msgid "Leading by example, clarity, and technical ownership"
+msgstr "Liderança baseada em exemplo, clareza e responsabilidade técnica"
 
 #: src/data/cards.ts:17
-msgid "My primary platform for the past few years. Experienced with component architecture, performance considerations, animations, and platform-specific constraints."
-msgstr "Minha principal plataforma nos últimos anos. Experiência com arquitetura de componentes, considerações de performance, animações e limitações específicas da plataforma."
+msgid "My primary platform for the past few years. Experienced with component architecture, performance considerations, animations, and platform-specific constraints"
+msgstr "Minha principal plataforma nos últimos anos. Experiência com arquitetura de componentes, considerações de performance, animações e limitações específicas da plataforma"
 
 #: src/components/skills-section.tsx:27
 msgid "Related skills"
 msgstr "Competências relacionadas"
 
 #: src/data/cards.ts:37
-msgid "Strong command of modern JavaScript standards and patterns. This was developed through optimizing React and React Native applications for the past few years."
-msgstr "Domínio sólido dos padrões e práticas modernas de JavaScript, desenvolvido ao longo dos últimos anos otimizando aplicações React e React Native."
+msgid "Strong command of modern JavaScript standards and patterns. This was developed through optimizing React and React Native applications for the past few years"
+msgstr "Domínio sólido dos padrões e práticas modernas de JavaScript, desenvolvido ao longo dos últimos anos otimizando aplicações React e React Native"
 
 #: src/data/working-ways.ts:20
 msgid "Technical Leadership & Mentorship"
 msgstr "Liderança Técnica e Mentoria"
 
-#: src/components/hero-section.tsx:31
+#: src/components/hero-section.tsx:32
 msgid "Vyndrix | Ramon Fernandes picture"
 msgstr "Foto de Vyndrix | Ramon Fernandes"
 
-#: src/components/hero-section.tsx:67
+#: src/components/hero-section.tsx:65
 msgid "Vyndrix's picture"
 msgstr "Foto de Vyndrix"
 
 #: src/data/working-ways.ts:11
-msgid "Working in rhythm with teams to ship iteratively and consistently."
-msgstr "Trabalhando em sintonia com o time para entregar de forma iterativa e consistente."
+msgid "Working in rhythm with teams to ship iteratively and consistently"
+msgstr "Trabalhando em sintonia com o time para entregar de forma iterativa e consistente"
 
 #: src/components/working-ways-section.tsx:12
 msgid "Working Ways"

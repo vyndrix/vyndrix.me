@@ -1,5 +1,5 @@
 import { MotionValue, useMotionValue } from "motion/react";
-import { createContext, useContext } from "react";
+import { createContext } from "react";
 
 interface State {
   xRat: MotionValue<number>;

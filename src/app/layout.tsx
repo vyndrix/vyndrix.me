@@ -93,6 +93,7 @@ export default function RootLayout({ children }: Props) {
           motion-reduce:duration-0`}
     >
       <body
+        suppressHydrationWarning
         className={`data-ready:transition-colors 
           data-ready:duration-750 
           data-ready:ease-in-out 

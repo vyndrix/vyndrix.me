@@ -5,6 +5,7 @@ import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { AnimatePresence } from "motion/react";
+import NextImage from "next/image";
 import { useState } from "react";
 import { Aerostat } from "./aerostat";
 import { useFloatPositionObserver } from "./aerostat/use-aerostat-postition-observer";
@@ -32,7 +33,7 @@ export function HeroSection() {
             </Dialog.Title>
           </VisuallyHidden>
           <Aerostat.Provider>
-            <Image open={open} />
+            <HeroDialogImage open={open} />
           </Aerostat.Provider>
           <Dialog.Footer className="flex justify-center">
             <span className="text-center text-xs text-foreground">
@@ -44,27 +45,34 @@ export function HeroSection() {
         </Dialog.Content>
       </Dialog>
       <Base.Title size="lg" className="self-center mt-2 mb-3">
-        <Trans>Hi, I'm Ramon</Trans>
+        <Trans>Hi, I{"'"}m Ramon</Trans>
       </Base.Title>
       <p className="transition-colors delay-700 text-lg text-center text-foreground">
         <Trans>
           A frontend and mobile developer focused on growing as a specialist in
           modern interfaces and design-driven experiences, which is also a
-          long-time comics collector that's permanently supervised by two lazy
-          kitties.
+          long-time comics collector that{"'"}s permanently supervised by two
+          lazy kitties
         </Trans>
       </p>
     </Section>
   );
 }
 
-const Image = ({ open }: { open: boolean }) => {
+const HeroDialogImage = ({ open }: { open: boolean }) => {
   const { _ } = useLingui();
   const ref = useFloatPositionObserver<HTMLImageElement>();
+  const imageAlt = _(msg`Vyndrix's picture`);
 
   return (
     <div className="flex">
-      <img ref={ref} src={AvatarSource.src} alt={_(msg`Vyndrix's picture`)} />
+      <NextImage
+        ref={ref}
+        src={AvatarSource.src}
+        width={AvatarSource.width}
+        height={AvatarSource.height}
+        alt={imageAlt}
+      />
       <AnimatePresence mode="wait">
         {open && (
           <Aerostat.Group>

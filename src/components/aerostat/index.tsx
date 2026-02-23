@@ -4,6 +4,7 @@ import {
   useReducedMotion,
   useTransform,
 } from "motion/react";
+import { useStableRandom } from "@/hooks/use-stable-random";
 import React, { useRef } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import Provider from "./aerostat-provider";
@@ -44,7 +45,7 @@ function Dialog({
   const shouldReduceMotion = useReducedMotion();
 
   const ref = useRef<HTMLDivElement>(null);
-  const randomizer = useRef<number>(Math.random() * 200);
+  const randomizer = useStableRandom(200);
 
   const { xRat, yRat } = useAerostatPositionRatting();
   const right = useTransform(xRat, (xr) => position.x * xr);
@@ -56,10 +57,10 @@ function Dialog({
   useAnimationFrame((t) => {
     if (!ref.current) return;
 
-    const scale = 1 + Math.sin(t / (350 + randomizer.current)) * 0.05;
-    const x = 5 * Math.sin(t / (550 + randomizer.current));
-    const y = 10 * Math.sin(t / (750 + randomizer.current));
-    const z = 4 * Math.sin(t / (1150 + randomizer.current)) - 2;
+    const scale = 1 + Math.sin(t / (350 + randomizer)) * 0.05;
+    const x = 5 * Math.sin(t / (550 + randomizer));
+    const y = 10 * Math.sin(t / (750 + randomizer));
+    const z = 4 * Math.sin(t / (1150 + randomizer)) - 2;
 
     ref.current.style.transform = `
       scale(${scale}) 

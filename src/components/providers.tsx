@@ -1,21 +1,11 @@
 "use client";
 
-import { useInitializeI18n } from "@/i18n/use-initialize-i18n";
+import { i18n } from "@/i18n";
 import { I18nProvider } from "@lingui/react";
 import { ThemeProvider } from "next-themes";
-import { useEffect } from "react";
 import { AnimatedLoadingGate } from "./animated-loading-gate";
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  const { loading, i18n } = useInitializeI18n();
-
-  useEffect(() => {
-    if (loading) {
-      document.documentElement.dataset.ready = "true";
-      document.body.dataset.ready = "true";
-    }
-  }, [loading]);
-
   return (
     <ThemeProvider
       storageKey="theme"
@@ -23,7 +13,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       defaultTheme="system"
       enableSystem
     >
-      <AnimatedLoadingGate loading={loading}>
+      <AnimatedLoadingGate>
         <I18nProvider i18n={i18n}>{children}</I18nProvider>
       </AnimatedLoadingGate>
     </ThemeProvider>

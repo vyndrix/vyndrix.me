@@ -6,9 +6,9 @@ import { Locales } from "./types";
 
 export const useLocale = () => {
   const { i18n } = useLingui();
-  const [_, setStoredLocale] = useLocalStorage<Locales>(
+  const [, setStoredLocale] = useLocalStorage<Locales>(
     STORED_LOCALE_KEY,
-    "en-US"
+    "en-US",
   );
 
   const toggleLocale = useCallback(() => {
@@ -16,7 +16,7 @@ export const useLocale = () => {
     document.documentElement.lang = newLocale;
     setStoredLocale(newLocale);
     i18n.activate(newLocale);
-  }, [i18n.locale, setStoredLocale]);
+  }, [i18n, setStoredLocale]);
 
   return { locale: i18n.locale as Locales, toggleLocale };
 };

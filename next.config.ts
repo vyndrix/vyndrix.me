@@ -1,5 +1,15 @@
 import { NextConfig } from "next";
 
+/** Minimal shape of a webpack rule used in next.config.ts */
+type WebpackRuleSetRule = {
+  test?: { test?: (s: string) => boolean };
+  issuer?: unknown;
+  resourceQuery?: { not?: unknown[] } | RegExp;
+  exclude?: RegExp;
+  use?: unknown;
+  [key: string]: unknown;
+};
+
 const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },

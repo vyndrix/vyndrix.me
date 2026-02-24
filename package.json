@@ -7,7 +7,7 @@
     "build": "next build --webpack",
     "lint": "eslint",
     "lingui:extract": "lingui extract --clean",
-    "lingui:compile": "lingui compile --typescript"
+    "lingui:compile": "lingui compile --typescript --output-prefix ''"
   },
   "dependencies": {
     "@lingui/core": "^5.8.0",

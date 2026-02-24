@@ -26,7 +26,7 @@ const Image = ({
   return (
     <AvatarPrimitive.Image
       data-slot="avatar-image"
-      className={cn("size-max", className)}
+      className={cn("h-full w-full object-cover", className)}
       {...props}
     />
   );

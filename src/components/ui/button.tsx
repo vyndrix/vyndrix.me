@@ -2,6 +2,7 @@ import { Slot } from "@radix-ui/react-slot";
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 export default function Button({
   className,
@@ -24,7 +25,6 @@ export default function Button({
         rounded-md 
         text-sm 
         font-medium 
-        transition-all 
         disabled:pointer-events-none 
         disabled:opacity-50 
         [&_svg]:pointer-events-none 
@@ -38,10 +38,12 @@ export default function Button({
         aria-invalid:ring-destructive/20 
         dark:aria-invalid:ring-destructive/40 
         aria-invalid:border-destructive
-        not-hover:transition-colors 
-        not-hover:duration-375 
-        not-hover:ease-in-out 
         motion-reduce:duration-0 
+        transition-[background-color]
+        duration-350 
+        ease-in-out
+        hover:duration-125
+        hover:ease-in-out
         hover:bg-accent 
         hover:text-accent-foreground 
         dark:hover:bg-accent/50

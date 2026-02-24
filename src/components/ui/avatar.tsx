@@ -26,7 +26,7 @@ const Image = ({
   return (
     <AvatarPrimitive.Image
       data-slot="avatar-image"
-      className={cn("aspect-auto size-max", className)}
+      className={cn("size-max", className)}
       {...props}
     />
   );

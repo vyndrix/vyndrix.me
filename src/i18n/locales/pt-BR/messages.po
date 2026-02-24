@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/components/hero-section.tsx:51
+#: src/components/hero-section.tsx:53
 msgid "A frontend and mobile developer focused on growing as a specialist in modern interfaces and design-driven experiences, which is also a long-time comics collector that's permanently supervised by two lazy kitties"
 msgstr "Desenvolvedor frontend e mobile focado em evoluir como especialista em interfaces modernas e experiências guiadas por design, além de colecionador de quadrinhos de longa data, permanentemente supervisionado por dois gatinhos preguiçosos"
 
@@ -41,7 +41,7 @@ msgstr "Comunicação e Suporte ao Time"
 msgid "Core Skills"
 msgstr "Competências Principais"
 
-#: src/components/hero-section.tsx:40
+#: src/components/hero-section.tsx:42
 msgid "Enjoying the day with my girlfriend at the sports store"
 msgstr "Aproveitando o dia com minha namorada na loja de esportes"
 
@@ -61,7 +61,7 @@ msgstr "Experiência prática em ambientes baseados em Scrum, contribuindo em pl
 msgid "Hi 😄"
 msgstr "Olá 😄"
 
-#: src/components/hero-section.tsx:48
+#: src/components/hero-section.tsx:50
 msgid "Hi, I'm Ramon"
 msgstr "Olá, eu sou Ramon"
 
@@ -85,11 +85,12 @@ msgstr "Domínio sólido dos padrões e práticas modernas de JavaScript, desenv
 msgid "Technical Leadership & Mentorship"
 msgstr "Liderança Técnica e Mentoria"
 
-#: src/components/hero-section.tsx:32
+#: src/components/hero-section.tsx:34
 msgid "Vyndrix | Ramon Fernandes picture"
 msgstr "Foto de Vyndrix | Ramon Fernandes"
 
-#: src/components/hero-section.tsx:65
+#: src/components/hero-section.tsx:18
+#: src/components/hero-section.tsx:67
 msgid "Vyndrix's picture"
 msgstr "Foto de Vyndrix"
 

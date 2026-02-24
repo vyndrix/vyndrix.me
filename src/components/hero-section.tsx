@@ -13,14 +13,16 @@ import { Avatar, Dialog, Section } from "./ui";
 import { Base } from "./ui/base";
 
 export function HeroSection() {
+  const { _ } = useLingui();
   const [open, setOpen] = useState(false);
+  const imageAlt = _(msg`Vyndrix's picture`);
 
   return (
     <Section>
       <Dialog open={open} onOpenChange={setOpen}>
         <Avatar>
           <Dialog.Trigger className="cursor-pointer" asChild>
-            <Avatar.Image src={AvatarSource.src} />
+            <Avatar.Image src={AvatarSource.src} alt={imageAlt} />
           </Dialog.Trigger>
           <Avatar.Fallback delayMs={1500}>
             <span className="text-3xl">RF</span>

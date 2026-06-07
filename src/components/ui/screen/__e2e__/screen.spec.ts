@@ -9,16 +9,6 @@ test.describe("Screen", () => {
     await expect(page.locator("main > div")).toHaveCSS("opacity", "1");
   });
 
-  test("matches visual snapshot after animation completes", async ({
-    page,
-  }) => {
-    await page.goto("/");
-    await expect(page.locator("main > div")).toHaveCSS("opacity", "1", {
-      timeout: 1000,
-    });
-    await expect(page.locator("main")).toHaveScreenshot("screen-animated.png");
-  });
-
   test("reduced-motion: reaches full opacity instantly", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/");

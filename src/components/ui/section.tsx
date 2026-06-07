@@ -1,7 +1,14 @@
 import { Base } from "./base";
 
-const Section = ({ children }: { children?: React.ReactNode }) => {
-  return <section className="flex flex-col justify-center">{children}</section>;
+const Section = ({
+  children,
+  ...props
+}: React.ComponentProps<"section">) => {
+  return (
+    <section className="flex flex-col justify-center" {...props}>
+      {children}
+    </section>
+  );
 };
 
 const Content = ({ children }: { children: React.ReactNode }) => {

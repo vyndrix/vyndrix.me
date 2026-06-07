@@ -1,13 +1,13 @@
 import ww from "@/data/working-ways";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { Essay, Section } from "./ui";
+import { Essay, Section } from "../ui";
 
 export function WorkingWaysSection() {
   const { _ } = useLingui();
 
   return (
-    <Section>
+    <Section data-testid="working-ways-section">
       <Section.Title>
         <Trans>Working Ways</Trans>
       </Section.Title>

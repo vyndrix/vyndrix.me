@@ -2,14 +2,14 @@ import cds from "@/data/cards";
 import { useIsDesktopLike } from "@/hooks/use-is-desktop-like";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
-import { Badge, Card, Grid, Icon, Section } from "./ui";
+import { Badge, Card, Grid, Icon, Section } from "../ui";
 
 export function SkillsSection() {
   const { _ } = useLingui();
   const isDesktopLike = useIsDesktopLike();
 
   return (
-    <Section>
+    <Section data-testid="skills-section">
       <Section.Title>
         <Trans>Core Skills</Trans>
       </Section.Title>

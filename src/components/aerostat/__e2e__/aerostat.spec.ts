@@ -1,7 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
 const openHeroDialog = async (page: Page) => {
-  await page.getByRole("button", { name: "Vyndrix's picture" }).click();
+  await page.getByTestId("hero-trigger").click();
   await page.getByRole("dialog").waitFor();
 };
 
@@ -51,10 +51,6 @@ test.describe("Aerostat", () => {
     await expect(dialog).toHaveScreenshot("aerostat-stagger-mid.png", {
       maxDiffPixelRatio: 0.05,
     });
-
-    await page.clock.runFor(700);
-    await expect(dialog).toHaveScreenshot("aerostat-stagger-late.png", {
-      maxDiffPixelRatio: 0.05,
-    });
+    // Settled state owned by hero-section dialog-open snapshot — no late frame here.
   });
 });

@@ -25,6 +25,7 @@ export function HeroSection() {
         <Avatar ref={scope} style={style}>
           <Dialog.Trigger
             data-umami-event="avatar-click"
+            data-testid="hero-trigger"
             className="cursor-pointer rounded-full size-full"
             aria-label={imageAlt}
           >

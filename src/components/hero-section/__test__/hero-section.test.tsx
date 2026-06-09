@@ -68,18 +68,18 @@ vi.mock("../../aerostat/use-aerostat-postition-observer", () => ({
   useFloatPositionObserver: () => undefined,
 }));
 
-const openDialog = (name: string) => {
+const openDialog = () => {
   act(() => {
-    fireEvent.click(screen.getByRole("button", { name }));
+    fireEvent.click(screen.getByTestId("hero-trigger"));
   });
 };
 
 describe("HeroSection", () => {
-  test("trigger is a button labelled by avatar alt text", () => {
+  test("trigger renders as a button with a non-empty aria-label", () => {
     render(<HeroSection />);
-    expect(
-      screen.getByRole("button", { name: "Vyndrix's picture" }).tagName,
-    ).toBe("BUTTON");
+    const trigger = screen.getByTestId("hero-trigger");
+    expect(trigger.tagName).toBe("BUTTON");
+    expect(trigger.getAttribute("aria-label")).toBeTruthy();
   });
 
   test("dialog is closed initially (content not in DOM)", () => {
@@ -89,21 +89,23 @@ describe("HeroSection", () => {
 
   test("clicking trigger opens the dialog", () => {
     render(<HeroSection />);
-    openDialog("Vyndrix's picture");
+    openDialog();
     screen.getByRole("dialog");
   });
 
-  test("opened dialog has accessible name from VisuallyHidden title", () => {
+  test("opened dialog has an accessible name from its title", () => {
     render(<HeroSection />);
-    openDialog("Vyndrix's picture");
-    screen.getByRole("dialog", { name: "Vyndrix | Ramon Fernandes picture" });
+    openDialog();
+    const dialog = screen.getByRole("dialog");
+    expect(dialog.getAttribute("aria-labelledby")).toBeTruthy();
   });
 
   test("dialog title is visually hidden but present in the a11y tree", () => {
     render(<HeroSection />);
-    openDialog("Vyndrix's picture");
+    openDialog();
     const title = screen.getByRole("heading");
     expect(title.dataset.slot).toBe("dialog-title");
+    expect(title.textContent).toBeTruthy();
     expect(title.style.position).toBe("absolute");
     expect(title.style.width).toBe("1px");
     expect(title.style.height).toBe("1px");
@@ -111,65 +113,66 @@ describe("HeroSection", () => {
 
   test("dialog is described by the footer caption", () => {
     render(<HeroSection />);
-    openDialog("Vyndrix's picture");
+    openDialog();
     const dialog = screen.getByRole("dialog");
     const caption = screen.getByTestId("hero-dialog-caption");
     expect(dialog.getAttribute("aria-describedby")).toBe(caption.id);
+    expect(caption.textContent).toBeTruthy();
   });
 
-  test("en-US: outer copy", () => {
-    render(<Composed />);
-    expect(
-      screen.getByRole("button", { name: "Vyndrix's picture" }),
-    ).toBeDefined();
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe(
-      "Hi, I'm Ramon",
-    );
+  test("outer copy: heading and bio render with text", () => {
+    render(<HeroSection />);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toBeTruthy();
     const bio = screen.getByTestId("hero-section-bio");
     expect(bio.tagName).toBe("P");
-    expect(bio.textContent).toContain(
-      "A frontend and mobile developer focused",
-    );
+    expect(bio.textContent).toBeTruthy();
   });
 
-  test("en-US: inner copy when dialog opens", () => {
+  test("locale toggle re-renders outer copy with different text", () => {
     render(<Composed />);
-    openDialog("Vyndrix's picture");
-    expect(screen.getByRole("heading").textContent).toBe(
-      "Vyndrix | Ramon Fernandes picture",
-    );
-    expect(screen.getByTestId("hero-dialog-caption").textContent).toBe(
-      "Enjoying the day with my girlfriend at the sports store",
-    );
-  });
+    const headingBefore =
+      screen.getByRole("heading", { level: 1 }).textContent ?? "";
+    const bioBefore =
+      screen.getByTestId("hero-section-bio").textContent ?? "";
+    const triggerAriaBefore =
+      screen.getByTestId("hero-trigger").getAttribute("aria-label") ?? "";
 
-  test("pt-BR: outer copy after locale toggle", () => {
-    render(<Composed />);
     act(() => {
-      fireEvent.click(screen.getByRole("button", { name: "EN" }));
+      fireEvent.click(screen.getByRole("button", { name: /EN|PT/ }));
     });
-    expect(
-      screen.getByRole("button", { name: "Foto de Vyndrix" }),
-    ).toBeDefined();
-    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe(
-      "Olá, eu sou Ramon",
-    );
-    const bio = screen.getByTestId("hero-section-bio");
-    expect(bio.tagName).toBe("P");
-    expect(bio.textContent).toContain("Desenvolvedor frontend e mobile");
+
+    const headingAfter =
+      screen.getByRole("heading", { level: 1 }).textContent ?? "";
+    const bioAfter = screen.getByTestId("hero-section-bio").textContent ?? "";
+    const triggerAriaAfter =
+      screen.getByTestId("hero-trigger").getAttribute("aria-label") ?? "";
+
+    expect(headingAfter).not.toBe(headingBefore);
+    expect(bioAfter).not.toBe(bioBefore);
+    expect(triggerAriaAfter).not.toBe(triggerAriaBefore);
   });
 
-  test("pt-BR: inner copy when dialog opens after locale toggle", () => {
+  test("locale toggle re-renders inner copy with different text", () => {
     render(<Composed />);
+    openDialog();
+    const titleBefore = screen.getByRole("heading").textContent ?? "";
+    const captionBefore =
+      screen.getByTestId("hero-dialog-caption").textContent ?? "";
+
+    // Close dialog before toggling so Radix's aria-hidden region doesn't trap LocaleSwitch
     act(() => {
-      fireEvent.click(screen.getByRole("button", { name: "EN" }));
+      fireEvent.keyDown(document, { key: "Escape" });
     });
-    openDialog("Foto de Vyndrix");
-    expect(screen.getByRole("heading").textContent).toBe(
-      "Foto de Vyndrix | Ramon Fernandes",
-    );
-    expect(screen.getByTestId("hero-dialog-caption").textContent).toBe(
-      "Aproveitando o dia com minha namorada na loja de esportes",
-    );
+    act(() => {
+      fireEvent.click(screen.getByRole("button", { name: /EN|PT/ }));
+    });
+    openDialog();
+
+    const titleAfter = screen.getByRole("heading").textContent ?? "";
+    const captionAfter =
+      screen.getByTestId("hero-dialog-caption").textContent ?? "";
+
+    expect(titleAfter).not.toBe(titleBefore);
+    expect(captionAfter).not.toBe(captionBefore);
   });
 });

@@ -1,6 +1,7 @@
 import "@/app/globals.css";
+import { AnimatedLoadingGate } from "@/components/animated-loading-gate";
 import { Header } from "@/components/header/header";
-import { Providers } from "@/components/providers";
+import { Providers } from "@/providers";
 import { Analytics } from "@/scripts/Analytics";
 import { Metadata, Viewport } from "next";
 
@@ -102,8 +103,10 @@ export default function RootLayout({ children }: Props) {
           antialiased`}
       >
         <Providers>
-          <Header />
-          {children}
+          <AnimatedLoadingGate>
+            <Header />
+            {children}
+          </AnimatedLoadingGate>
         </Providers>
       </body>
       <Analytics />
